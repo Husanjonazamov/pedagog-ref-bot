@@ -104,9 +104,9 @@ REF_PHONE_ERROR = {
 }
 
 REF_PHONE_NOT_FOUND = {
-    "uz": "❌ Bu telefon raqam topilmadi.\n\nIltimos, avval [pedagog.uz](https://pedagog.uz) saytida ro‘yxatdan o‘ting.",
-    "ru": "❌ Этот номер не найден.\n\nПожалуйста, сначала зарегистрируйтесь на [pedagog.uz](https://pedagog.uz).",
-    "en": "❌ This phone number was not found.\n\nPlease register first at [pedagog.uz](https://pedagog.uz)."
+    "uz": "❌ Siz oldin Pedagog.uz’da ro‘yxatdan o‘tmagansiz. Iltimos, @pedagog_uzbot orqali ro‘yxatdan o‘ting.",
+    "ru": "❌ Вы ещё не зарегистрированы на Pedagog.uz. Пожалуйста, зарегистрируйтесь через @pedagog_uzbot.",
+    "en": "❌ You have not registered on Pedagog.uz yet. Please register via @pedagog_uzbot."
 }
 
 
