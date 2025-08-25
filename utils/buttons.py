@@ -92,9 +92,6 @@ def compotition_menu(lang):
                     KeyboardButton(text=gifts_uz),
                     KeyboardButton(text=top_referrals_uz),
                 ],
-                [
-                    KeyboardButton(text=back_uz),
-                ]
             ],
             resize_keyboard=True
         )
@@ -110,9 +107,6 @@ def compotition_menu(lang):
                     KeyboardButton(text=gifts_ru),
                     KeyboardButton(text=top_referrals_ru),                    
                 ],
-                [
-                    KeyboardButton(text=back_ru),
-                ]
             ],
             resize_keyboard=True
         )
@@ -128,9 +122,6 @@ def compotition_menu(lang):
                     KeyboardButton(text=gifts_en),
                     KeyboardButton(text=top_referrals_en),                   
                 ],
-                [
-                    KeyboardButton(text=back_en),
-                ]
             ],
             resize_keyboard=True
         )
