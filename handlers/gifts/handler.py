@@ -23,7 +23,7 @@ async def _task(message: Message, state: FSMContext):
     data = getUserPoints(tg_id)
     
     await message.answer(
-        texts.GIFTS[lang]
+        texts.GIFTS[lang].format(ref_link="https://t.me/Pedagog_uzbot")
     )
     
 

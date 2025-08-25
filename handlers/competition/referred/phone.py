@@ -24,7 +24,9 @@ def normalize_phone(phone: str) -> str:
 
 async def _task(message: Message, state: FSMContext):
     lang = message.from_user.language_code or "uz"
+    tg_id = message.from_user.id
     phone = None
+    
 
     if message.contact:
         phone = message.contact.phone_number
@@ -52,10 +54,13 @@ async def _task(message: Message, state: FSMContext):
 
     if data.get("exists") and data.get("referral_link"):
         referral_link = data['referral_link']
+        
         await message.answer(
-            texts.REF_LINK[lang].format(referral_link),
-            reply_markup=buttons.referral_buttons(lang=lang, ref_link=referral_link)
+            texts.REF_LINK[lang].format(ref_link=referral_link),
+            reply_markup=buttons.create_url_button(lang=lang, url=referral_link)
         )
+
+        
     else:
         await message.answer(texts.REF_PHONE_NOT_FOUND[lang])
 

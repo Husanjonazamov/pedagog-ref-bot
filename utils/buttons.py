@@ -170,3 +170,44 @@ def referral_buttons(ref_link, lang):
     ]
 
     return InlineKeyboardMarkup(inline_keyboard=buttons)
+
+
+
+
+
+def send_ref_button(lang, user_id, text, ref_link):
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto"   
+
+    print(ref_link)
+    payload = {
+        "chat_id": user_id,
+        "photo":  IMAGE_ID, 
+        "caption": text,
+        "parse_mode": "HTML",
+        "reply_markup": {
+            "inline_keyboard": [
+                [
+                    {
+                        "text": WEB_BUTTON[lang],
+                        "web_app": {
+                            "url": f"{ref_link}"
+                        }
+                    },
+                ],
+            ]
+        }
+    }
+
+    response = requests.post(url, json=payload)
+    
+    if not response.ok:
+        print("❌ Ошибка при отправке инлайн-кнопки:", response.text)
+        
+        
+
+def create_url_button(lang, url: str) -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text=WEB_BUTTON[lang], url=url)]
+        ]
+    )

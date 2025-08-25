@@ -25,11 +25,13 @@ async def _task(message: Message, state: FSMContext):
 
     if data and "referral_link" in data:
         ref_link = data['referral_link']
-        print(ref_link)
+        
         await message.answer(
-            texts.REF_LINK[lang].format(ref_link),
-            reply_markup=buttons.referral_buttons(ref_link=ref_link, lang=lang)
+            texts.REF_LINK[lang].format(ref_link=ref_link),
+            reply_markup=buttons.create_url_button(lang=lang, url=ref_link)
         )
+        
+        # buttons.send_ref_button(lang=lang, ref_link=ref_link, user_id=tg_id, text=texts.REF_LINK[lang].format(ref_link))
     else:
         await message.answer(
             texts.REF_PHONE[lang],

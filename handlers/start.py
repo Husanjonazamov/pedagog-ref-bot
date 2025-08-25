@@ -17,11 +17,7 @@ async def _task(message: Message, state: FSMContext):
     text = texts.START[lang]
     user_id = message.from_user.id
     
-    # buttons.send_webapp_button(lang=lang, user_id=user_id, text=text)
-    await message.answer(
-        texts.COMPETITION[lang],
-        reply_markup=buttons.compotition_menu(lang=lang)
-    )
+    buttons.send_webapp_button(lang=lang, user_id=user_id, text=text)
     
     
 @dp.message_handler(commands=['start'], state="*")
