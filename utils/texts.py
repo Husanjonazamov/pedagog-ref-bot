@@ -212,68 +212,85 @@ GIFTS = {
         "✔️ @pedagoglaru - The channel for creative teachers!"
     ),
 }
-
 REF_LINK = {
-    "uz": (
-        "⚡️ \"Eng yaxshi pedagog\" tanlovi boshlandi!\n\n"
-        "Pedagoglar uchun bilim va faollikni oshirish maqsadida yutuqli tanlovga start berildi. "
-        "G‘oliblar Pedagogik mahorat testidan o‘tish orqali aniqlanadi. Referal yig‘ing va test ishlang – sovrinlarni qo‘lga kiriting! "
-        "Tanlov 10-sentyabrgacha davom etadi.\n\n"
-        "🎁 Tanlov g‘oliblari quyidagicha taqdirlanadi:\n"
-        "🔹 1-o‘rin – Planshet (zamonaviy o‘qituvchi ish quroli)\n"
-        "🔹 2-o‘rin – 5 ta top kitoblar to‘plami\n"
-        "🔹 3-o‘rin – Milliy sertifikat to‘lovini qoplab beramiz\n\n"
-        "🤩 Eng ko‘p referal to‘plagan 20 nafar ishtirokchi:\n"
-        "🔸 1-o‘rin – 300 000 so‘m\n"
-        "🔸 2-o‘rin – 200 000 so‘m\n"
-        "🔸 3-o‘rin – 100 000 so‘m\n"
-        "🔸 4–10-o‘rinlar – 50 000 so‘m\n"
-        "🔸 11–20-o‘rinlar – “pedagog.uz” platformasidan 1-chorak davomida resurslardan tekin foydalanish imkoniyati\n\n"
-        "❗️ Tanlovda qatnashgan barcha ishtirokchilarga SERTIFIKAT beriladi!\n\n"
-        "Tanlovda ishtirok etish👇\n"
-        "<a href=\"{ref_link}\">https://t.me/Pedagog_uzbot</a>\n"
-        "<a href=\"{ref_link}\">https://t.me/Pedagog_uzbot</a>"
-    ),
-    "ru": (
-        "⚡️ Конкурс «Лучший педагог» стартовал!\n\n"
-        "Для педагогов начался конкурс с призами, чтобы повысить знания и активность. "
-        "Победители определяются по результатам теста педагогического мастерства. "
-        "Собирайте рефералов, проходите тест и выигрывайте призы! "
-        "Конкурс продлится до 10 сентября.\n\n"
-        "🎁 Призы для победителей:\n"
-        "🔹 1-е место – Планшет (современный инструмент преподавателя)\n"
-        "🔹 2-е место – Набор из 5 лучших книг\n"
-        "🔹 3-е место – Оплата Национального сертификата\n\n"
-        "🤩 Для 20 участников с наибольшим количеством рефералов:\n"
-        "🔸 1-е место – 300 000 сум\n"
-        "🔸 2-е место – 200 000 сум\n"
-        "🔸 3-е место – 100 000 сум\n"
-        "🔸 4–10 места – 50 000 сум\n"
-        "🔸 11–20 места – Бесплатный доступ к ресурсам платформы «pedagog.uz» на 1 квартал\n\n"
-        "❗️ Все участники конкурса получат СЕРТИФИКАТ!\n\n"
-        "Участвуйте в конкурсе👇\n"
-        "<a href=\"{ref_link}\">https://t.me/Pedagog_uzbot</a>\n"
-        "<a href=\"{ref_link}\">https://t.me/Pedagog_uzbot</a>"
-    ),
-    "en": (
-        "⚡️ The “Best Teacher” contest has started!\n\n"
-        "A rewarding contest has begun to help teachers enhance their knowledge and activity. "
-        "Winners will be determined by passing the Pedagogical Mastery Test. "
-        "Gather referrals, complete the test, and win prizes! "
-        "The contest runs until September 10.\n\n"
-        "🎁 Prizes for the winners:\n"
-        "🔹 1st place – Tablet (a modern teaching tool)\n"
-        "🔹 2nd place – A set of 5 top books\n"
-        "🔹 3rd place – We cover the National Certificate fee\n\n"
-        "🤩 For the top 20 participants with the most referrals:\n"
-        "🔸 1st place – 300,000 UZS\n"
-        "🔸 2nd place – 200,000 UZS\n"
-        "🔸 3rd place – 100,000 UZS\n"
-        "🔸 4th–10th places – 50,000 UZS\n"
-        "🔸 11th–20th places – Free access to resources on “pedagog.uz” platform for one quarter\n\n"
-        "❗️ All participants will receive a CERTIFICATE!\n\n"
-        "Join the contest👇\n"
-        "<a href=\"{ref_link}\">https://t.me/Pedagog_uzbot</a>\n"
-        "<a href=\"{ref_link}\">https://t.me/Pedagog_uzbot</a>"
-    ),
+    "uz": """⚡️ "Eng yaxshi pedagog" tanlovi boshlandi!
+
+Pedagoglar uchun bilim va faollik oshirish maqsadida yutuqli tanlovga start berildi. G‘oliblar Pedagogik mahorat testidan o‘tish orqali aniqlanadi, referal yig‘ish va test ishlash orqali sovrindor bo‘ling! Tanlov 25-sentyabrgacha davom etadi. 1-oktyabr O‘qituvchi va murabbiylar kunidan oldin sovrinlar tarqatiladi!
+
+🎁 Tanlov g‘oliblari quyidagicha taqdirlanadi:
+🔹 1-o‘rin – Planshet (zamonaviy o‘qituvchi ish quroli) 
+🔹 2-o‘rin – 5 ta top kitoblar to‘plami 
+🔹 3-o‘rin – Milliy sertifikat to‘lovini qoplab beramiz 
+
+Shartlar: Pedagog.uz ning barcha ijtimoiy tarmoqlariga azo bo‘lish va 1-choraklik pedagog.uz xizmatlariga to‘lov amalga oshirilgan bo‘lishi kerak. Ushbu shartlarni bajargan pedagoglar ichida tasodifiy shaklda sovrindorlar aniqlanadi.
+
+🤩 Eng ko‘p referal to‘plagan 20 nafar ishtirokchi:
+🔸 1-o‘rin – 300 000 so‘m 
+🔸 2-o‘rin – 200 000 so‘m
+🔸 3-o‘rin – 100 000 so‘m 
+🔸 4–10-o‘rinlar – 50 000 so‘m
+🔸 11–20-o‘rinlar – pedagog.uz resurslaridan 1-chorak davomida tekin foydalanish
+
+Shartlar: @pedagog_uzbot ga kirib botni ishga tushiring, so‘ng Konkurs tugmasini bosing. Bot sizga referalli reklama postini beradi. Ushbu postni imkon qadar ko‘proq odamga ulashing.
+
+❗️ Tanlovda qatnashgan barcha ishtirokchilarga SERTIFIKAT beriladi!
+
+Tanlovda ishtirok etish👇
+<a href="{ref_link}">https://t.me/Pedagog_uzbot?start=start</a>
+<a href="{ref_link}">https://t.me/Pedagog_uzbot?start=start</a>
+""",
+
+    "ru": """⚡️ Запущен конкурс "Лучший педагог"!
+
+Для педагогов стартовал конкурс с призами, направленный на повышение знаний и активности. Победители определяются по результатам теста педагогического мастерства. Собирайте рефералы, проходите тест и станьте победителем! Конкурс продлится до 25 сентября. Призы будут вручены до 1 октября – ко Дню учителя и наставника!
+
+🎁 Победители конкурса будут награждены:
+🔹 1-е место – Планшет (современный инструмент учителя) 
+🔹 2-е место – Набор из 5 лучших книг 
+🔹 3-е место – Оплата национального сертификата 
+
+Условия: Подписка на все социальные сети Pedagog.uz и оплата услуг Pedagog.uz за 1 квартал. Среди участников, выполнивших условия, победители будут определены случайным образом.
+
+🤩 20 участников, собравших больше всего рефералов:
+🔸 1-е место – 300 000 сум
+🔸 2-е место – 200 000 сум
+🔸 3-е место – 100 000 сум
+🔸 4–10-е места – 50 000 сум
+🔸 11–20-е места – бесплатный доступ к ресурсам Pedagog.uz в течение 1 квартала
+
+Условия: Перейдите в @pedagog_uzbot, запустите бота, затем нажмите кнопку «Конкурс». Бот предоставит вам реферальный пост. Распространяйте его как можно большему числу людей.
+
+❗️ Все участники конкурса получат СЕРТИФИКАТ!
+
+Участвовать в конкурсе👇
+<a href="{ref_link}">https://t.me/Pedagog_uzbot?start=start</a>
+<a href="{ref_link}">https://t.me/Pedagog_uzbot?start=start</a>
+""",
+
+    "en": """⚡️ The "Best Teacher" contest has started!
+
+A prize contest has been launched for teachers to enhance their knowledge and activity. Winners will be determined based on the Pedagogical Skills Test. Collect referrals, complete the test, and become a winner! The contest runs until September 25. Prizes will be distributed before October 1 – Teacher and Mentor Day!
+
+🎁 Prizes for the winners:
+🔹 1st place – Tablet (a modern teacher's tool) 
+🔹 2nd place – A set of 5 top books 
+🔹 3rd place – National certificate fee covered 
+
+Conditions: Subscribe to all Pedagog.uz social media accounts and make the 1st quarter service payment to Pedagog.uz. Winners will be randomly selected among those who meet the conditions.
+
+🤩 Top 20 participants with the most referrals:
+🔸 1st place – 300,000 UZS
+🔸 2nd place – 200,000 UZS
+🔸 3rd place – 100,000 UZS
+🔸 4th–10th places – 50,000 UZS
+🔸 11th–20th places – Free access to Pedagog.uz resources for 1 quarter
+
+Conditions: Go to @pedagog_uzbot, start the bot, then press the "Contest" button. The bot will provide you with a referral post. Share it with as many people as possible.
+
+❗️ All participants will receive a CERTIFICATE!
+
+Join the contest👇
+<a href="{ref_link}">https://t.me/Pedagog_uzbot?start=start</a>
+<a href="{ref_link}">https://t.me/Pedagog_uzbot?start=start</a>
+"""
 }
