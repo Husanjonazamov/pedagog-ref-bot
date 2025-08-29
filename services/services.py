@@ -4,6 +4,39 @@ from utils.env import BASE_URL
 
 
 
+
+
+def botUser(tg_id: int, first_name: str):
+    url = f"{BASE_URL}/auth/botuser/"
+    payload = {
+        "tg_id": tg_id,
+        "first_name": first_name
+    }
+
+    try:
+        response = requests.post(url, json=payload)
+        
+        if response.status_code == 201:
+            return {"exists": False, "data": response.json()}
+        
+        elif response.status_code == 400:
+            res = response.json()
+            if "already exists" in res.get("message", ""):
+                return {"exists": True, "message": "User already exists"}
+            return {"exists": False, "message": res}
+        
+        else:
+            return {
+                "exists": False, 
+                "message": f"Server error: {response.status_code} - {response.text}"
+            }
+
+    except requests.RequestException as e:
+        return {"exists": False, "message": f"Request failed: {e}"}
+
+ 
+
+
 def check_user(tg_id: int):
     url = f"{BASE_URL}/check-user/"
     payload = {"tg_id": tg_id}
